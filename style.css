@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --magenta: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background: -40vw 0vh url('./images/bg-pattern-top-mobile.svg') no-repeat, url('./images/bg-pattern-bottom-mobile.svg') no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    color: var(--magenta);
+    margin: 4rem 3rem 0;
+    font-size: 2rem;
+}
+
+.info {
+    text-align: center;
+    margin: .5rem;
+}
+
+.info p {
+    color: hsl(303, 10%, 53%);
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.card {
+    background-color: var(--magenta);
+    padding: 3rem 2rem 2rem;
+    margin: 1rem;
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.card p {
+    color: hsl(300, 24%, 96%);
+    line-height: 1.5rem;
+    font-size: .85rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.card img {
+    width: 2.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items:center;
+    margin-bottom: 2rem;
+}
+
+.name {
+    margin-left: 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.name p {
+    color: var(--pink);
+    opacity: .7;
+}
+
+.rate {
+    background-color: hsl(300, 24%, 96%);
+    color: var(--magenta);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.review {
+    text-align: center;
+    font-weight: bold;
+    margin: 3rem 0 ;
+}
+
+.review img {
+    margin: .5rem .2rem;
+}
+
+@media (min-width:900px) {
+    html {
+        margin-left: 5rem;
+    }
+    
+    body {
+        background: -25vw -30vh url('./images/bg-pattern-top-desktop.svg') no-repeat, 20vw 8vh url('./images/bg-pattern-bottom-desktop.svg') no-repeat;
+        background-size: contain;
+      
+    }
+    .header {
+        display: flex;
+        max-width: 80vw;
+    }
+    .info {
+        
+        text-align: left;
+    }
+    h1 {
+        margin-left: 0;
+        font-size: 2.5rem;
+    }
+    .rate {
+        display: flex;
+        align-items: center;
+        width: 30rem;
+    }
+
+    .rate p {
+        margin-left: 2rem;
+    }
+    .review {
+        margin-left: 5rem;
+       
+    }
+
+    .two {
+        margin-left: 4.5rem;
+    } 
+    .three {
+        margin-left: 8.5rem;
+    }
+    .people {
+        display: flex;
+        margin-left: -1rem;
+    }
+    .card {
+        min-width: 25.5vw;
+        min-height: 27.5vh;
+    }
+    .irene {
+        margin-top: 2rem;
+    }
+ .anne {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width:1900px) {
+    body {
+        margin: 5rem;
+        background: 0vw 0vh url('./images/bg-pattern-top-desktop.svg') no-repeat,
+        45vw 28vh url('./images/bg-pattern-bottom-desktop.svg') no-repeat;
+    }
+}
